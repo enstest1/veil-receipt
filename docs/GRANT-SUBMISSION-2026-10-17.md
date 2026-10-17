@@ -8,6 +8,7 @@
 - Confirmation: Google formResponse HTTP 200, visible text **'Your response has been recorded'** and **'Submit another response'**
 - Project: **VEIL//RECEIPT**
 - GitHub: https://github.com/enstest1/veil-receipt
+- Read-only public site published after grant submission: https://enstest1.github.io/veil-receipt/ (not a live payment processor).
 - Proposed grant ask: **US$30,000** in four milestones, subject to Beldex review
 - Team size submitted: **1 (individual developer)**
 - Beldex Wallet Privacy Token: **NOT registered as of submission**

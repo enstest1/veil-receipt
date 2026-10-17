@@ -4,6 +4,10 @@ Privacy-conscious merchant invoicing and signed **operator review statements**, 
 
 **Status (2026-10-17):** Public GitHub https://github.com/enstest1/veil-receipt ; local website and APIs work; seven automated tests pass; official wallet SDK connection/balance interface is wired but needs a real user-approved extension. Does NOT verify Beldex blockchain payments; no Privacy Token minted by this software; no financial custody. Do not interpret signed statements as payment settlement.
 
+## Public read-only preview
+
+**https://enstest1.github.io/veil-receipt/** (GitHub Pages, verified HTTP 200 on October 17, 2026). The publicly hosted site is read-only: it cannot issue invoices, operate the backend, or verify real Beldex payments. The functional merchant app runs locally only.
+
 ## Start (Windows PowerShell)
 
 ```powershell
