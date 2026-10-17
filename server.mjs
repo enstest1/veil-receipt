@@ -39,7 +39,7 @@ const receipt=createReceipt(i,keys);db.receipts.push(receipt);i.receiptId=receip
 if(route.startsWith('/api/receipts/')&&req.method==='GET'){if(!authorized(req))return send(res,403,{error:'Operator key required'});const r=db.receipts.find(v=>v.id===route.split('/').pop());return r?send(res,200,{receipt:r,valid:verifyReceipt(r,keys.publicKey)}):send(res,404,{error:'Receipt not found'})}
 if(req.method!=='GET')return send(res,405,{error:'Method not allowed'});
 const filename=route==='/'?'index.html':route.slice(1);
-if(!['index.html','styles.css','app.js'].includes(filename))return send(res,404,{error:'Not found'});
+if(!['index.html','styles.css','app.js','wallet-sdk.js'].includes(filename))return send(res,404,{error:'Not found'});
 const type=filename.endsWith('.css')?'text/css':filename.endsWith('.js')?'text/javascript':'text/html';
 res.writeHead(200,{'Content-Type':type,'X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'self'; connect-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'none'"});
 fs.createReadStream(path.join(ROOT,'public',filename)).pipe(res);
