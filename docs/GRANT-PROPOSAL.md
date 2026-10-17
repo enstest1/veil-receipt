@@ -1,6 +1,6 @@
 # Beldex Developer Grants — VEIL//RECEIPT
 
-Submission status: **DRAFT, NOT SUBMITTED**. Proposed ask **US$30,000**. Beldex advertises a $1M total pool, without fixed award sizes.
+Submission status: **SUBMITTED October 17, 2026 (official Google form confirmation received)**; see docs/GRANT-SUBMISSION-2026-10-17.md. Proposed ask **US$30,000**. Beldex advertises a $1M total pool, without fixed award sizes.
 
 ## Project
 VEIL//RECEIPT is a developer-first merchant checkout/invoice toolkit intended for Beldex Proto Privacy Tokens. It focuses on customer and recipient confidentiality, noncustodial user-approved wallet actions, reproducible receipts and narrowly scoped proof of fulfillment, without exposing public transaction histories.

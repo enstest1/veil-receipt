@@ -27,11 +27,15 @@ Open http://127.0.0.1:8788. Enter the operator key saved only on the local machi
 - Privacy Token API support for transfer or independent payment proof.
 - Actual VEIL registration, faucet funding and real test transfers.
 - Database, auth, rate limiting, encrypted storage, external security audit for public hosting.
-- Public hosted demo and Beldex grant submission (GitHub publication is complete).
+- Public hosted demo and wallet-backed testnet activity (GitHub and Beldex grant form submissions are complete).
 
 ## Token registration
 
 See [Testnet Runbook](docs/TESTNET-RUNBOOK.md). Test proposal: name **Veil Receipt**, ticker **VEIL**, 9 decimals, initial 5,000, max 100,000. 200 test BDX plus transaction fees required. Store token ID and transaction hash, but never wallet secrets.
+
+## Grant submission
+
+Official Beldex developer grant application **submitted October 17, 2026** with Google Forms confirmation. Proposed milestone budget US$30,000, not approved. See [submission evidence](docs/GRANT-SUBMISSION-2026-10-17.md).
 
 ## Grant proposal
 
