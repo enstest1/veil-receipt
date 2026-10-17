@@ -2,7 +2,7 @@
 
 Privacy-conscious merchant invoicing and signed **operator review statements**, built as a Beldex Proto testnet engineering prototype.
 
-**Status (2026-10-17):** Local website and APIs work; Node tests pass. Does NOT verify Beldex blockchain payments; no Privacy Token minted by this software; no financial custody. Do not interpret signed statements as payment settlement.
+**Status (2026-10-17):** Public GitHub https://github.com/enstest1/veil-receipt ; local website and APIs work; seven automated tests pass; official wallet SDK connection/balance interface is wired but needs a real user-approved extension. Does NOT verify Beldex blockchain payments; no Privacy Token minted by this software; no financial custody. Do not interpret signed statements as payment settlement.
 
 ## Start (Windows PowerShell)
 
@@ -23,11 +23,11 @@ Open http://127.0.0.1:8788. Enter the operator key saved only on the local machi
 
 ## What is missing
 
-- User-approved Beldex wallet integration (official extension must be installed by a human).
+- Live Chrome wallet authorization and real BDX testnet balance check (SDK UI exists; user has not installed/approved extension).
 - Privacy Token API support for transfer or independent payment proof.
 - Actual VEIL registration, faucet funding and real test transfers.
 - Database, auth, rate limiting, encrypted storage, external security audit for public hosting.
-- GitHub publish, public demo, Beldex grant submission until verified.
+- Public hosted demo and Beldex grant submission (GitHub publication is complete).
 
 ## Token registration
 

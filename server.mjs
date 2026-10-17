@@ -4,7 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createKeys, createInvoice, createReceipt, verifyReceipt, secretOK } from './lib.mjs';
 const ROOT=path.dirname(fileURLToPath(import.meta.url));
-const DATA=path.join(ROOT,'data'); fs.mkdirSync(DATA,{recursive:true});
+const DATA=process.env.DATA_DIR?path.resolve(process.env.DATA_DIR):path.join(ROOT,'data'); fs.mkdirSync(DATA,{recursive:true});
 const keyfile=path.join(DATA,'issuer-keys.json');
 const keys=fs.existsSync(keyfile)?JSON.parse(fs.readFileSync(keyfile,'utf8')):createKeys();
 if(!fs.existsSync(keyfile))fs.writeFileSync(keyfile,JSON.stringify(keys),{mode:0o600});
