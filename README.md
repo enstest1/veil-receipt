@@ -48,3 +48,6 @@ See [Grant Proposal](docs/GRANT-PROPOSAL.md) for proposed US$30K milestones. The
 ## Threat model
 
 The service should not be internet-exposed in its current form; operator password is for a local single-user demo only. A valid issuer signature says ONLY the issuer signed an assessment, not that the transfer happened or that any onchain state is final. No real funds should be sent through this prototype.
+
+## Local Beldex testnet BDX send (October 17)
+The Beldex testnet setup screen now includes a local-only, user-approved test BDX send flow using the official SDK. It rejects mainnet, invalid addresses and transfers over 10 test BDX. A submitted tx is not settlement proof and this SDK does not implement Privacy Token registration or independent confidential transfer verification. See [wallet integration checkpoint](docs/BELDEX-WALLET-GATE.md). No wallet secret was accessed or saved.
